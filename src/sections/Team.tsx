@@ -3,13 +3,15 @@ import { motion } from 'framer-motion';
 import AnimatedSection from '../components/AnimatedSection';
 import { Linkedin, Mail } from 'lucide-react';
 import image2 from '../assets/team2.png'
+import image3 from '../assets/team3.png'
+import image1 from '../assets/team1.png'
 
 const Team = () => {
   const team = [
     {
       name: 'Varun Nair',
       role: 'CEO & Founder',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+      image:image1,
       expertise: 'CUSTOMS CLEARANCE OPERATIONS',
     },
     {
@@ -21,7 +23,7 @@ const Team = () => {
     {
       name: 'ZAYAN RAMZAN',
       role: 'CEO',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
+      image: image3,
       expertise: 'OPERATIONS & SALES',
     },
   ];
@@ -63,7 +65,7 @@ const Team = () => {
                 </motion.div>
                 <div className="p-4 text-center">
                   <h3 className="text-lg font-semibold mb-1">{member.name}</h3>
-                  <p className="text-blue-600 dark:text-blue-400 mb-2">{member.role}</p>
+                  <p className="text-purple-600 dark:text-orange-400 mb-2">{member.role}</p>
                   <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
                     {member.expertise}
                   </p>
