@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import AnimatedSection from '../components/AnimatedSection';
 import { Linkedin, Mail } from 'lucide-react';

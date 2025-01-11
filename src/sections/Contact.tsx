@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 
@@ -39,7 +38,7 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-white mb-4">Contact Us</h2>
+          <h2 className="text-4xl font-bold text-orange-500 mb-4">Contact Us</h2>
           <p className="text-gray-400">Get in touch with our team</p>
         </motion.div>
 
@@ -54,11 +53,11 @@ const Contact = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-navy-800 p-6 rounded-lg hover:bg-navy-700 transition-colors"
+              className="bg-navy-800 p-6 rounded-lg hover:bg-navy-900 transition-colors"
             >
               <div className="flex flex-col items-center text-center">
-                <item.icon className="w-8 h-8 text-blue-400 mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
+                <item.icon className="w-8 h-8 text-purple-600 mb-4" />
+                <h3 className="text-xl font-semibold text-orange-500 mb-2">{item.title}</h3>
                 <p className="text-gray-400">{item.content}</p>
               </div>
             </motion.a>
