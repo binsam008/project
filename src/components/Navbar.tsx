@@ -25,9 +25,10 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-white/30 dark:bg-navy-900/50 md:bg-white/10dark:bg-navy-900/30">
+    <nav className="fixed w-full z-50 bg-white/30 dark:bg-navy-900/50 md:bg-white/10 dark:bg-navy-900/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
         <div className="flex items-center justify-between h-16">
+          {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -48,6 +49,7 @@ const Navbar = () => {
             </Link>
           </motion.div>
 
+          {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-4">
               {navItems.map((item) => (
@@ -69,7 +71,17 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="md:hidden">
+          {/* Mobile Navigation */}
+          <div className="md:hidden flex items-center space-x-4">
+            {/* Light/Dark Mode Toggle Button */}
+            <button
+              onClick={() => setIsDark(!isDark)}
+              className="p-2 rounded-lg bg-gray-100 dark:bg-navy-800"
+            >
+              {isDark ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+
+            {/* Hamburger Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-lg bg-gray-100 dark:bg-navy-800"
@@ -80,6 +92,7 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, y: -20 }}
