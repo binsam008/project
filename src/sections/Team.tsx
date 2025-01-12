@@ -15,7 +15,7 @@ const Team = () => {
     },
     {
       name: 'ZAYAN RAMZAN',
-      role: 'CEO & Founder',
+      role: 'CEO & CO Founder',
       image: image3,
       expertise: 'OPERATIONS & SALES',
     },
