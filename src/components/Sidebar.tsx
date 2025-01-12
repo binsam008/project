@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-import { Home, Info, Briefcase, Users, Phone, MessageSquare } from 'lucide-react';
+import { Home, Info, Briefcase, Users, Phone, MessageSquare, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Sidebar = () => {
@@ -9,11 +9,17 @@ const Sidebar = () => {
     { icon: <Briefcase size={20} />, to: 'services', label: 'Services' },
     { icon: <Users size={20} />, to: 'team', label: 'Team' },
     { icon: <Phone size={20} />, to: 'contact', label: 'Contact' },
-    { 
-      icon: <MessageSquare size={20} />, 
+    {
+      icon: <MessageSquare size={20} />,
       to: 'https://wa.me/97338251155',
       label: 'WhatsApp',
-      external: true 
+      external: true
+    },
+    {
+      icon: <Mail size={20} />,
+      to: 'mailto:info.bh@wellreachlogisticsbh.com', // Fixed
+      label: 'Mail',
+      external: true
     },
   ];
 
@@ -24,16 +30,16 @@ const Sidebar = () => {
       className="fixed left-4 top-1/2 transform -translate-y-1/2 z-50"
     >
       <div className="flex flex-col space-y-4">
-        {sidebarItems.map((item) => (
+        {sidebarItems.map((item) =>
           item.external ? (
             <a
               key={item.label}
               href={item.to}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-white dark:bg-navy-800 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-50 dark:hover:bg-navy-700 transition-colors duration-200 group relative"
+              className="w-10 h-10 bg-white dark:bg-navy-800 rounded-full flex items-center justify-center shadow-lg hover:bg-navy-700 dark:hover:bg-navy-700 transition-colors duration-200 group relative"
             >
-              <span className="text-gray-600 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+              <span className="text-gray-600 dark:text-gray-300 group-hover:text-purple-600 dark:group-hover:text-orange-400">
                 {item.icon}
               </span>
               <span className="absolute left-12 bg-white dark:bg-navy-800 px-2 py-1 rounded text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -45,9 +51,10 @@ const Sidebar = () => {
               key={item.label}
               to={item.to}
               smooth={true}
-              className="w-10 h-10 bg-white dark:bg-navy-800 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-50 dark:hover:bg-navy-700 transition-colors duration-200 group relative cursor-pointer"
+              className="w-10 h-10 bg-white dark:bg-navy-800 rounded-full flex items-center justify-center shadow-lg hover:bg-navy-700 dark:hover:bg-navy-700 transition-colors duration-200 group relative cursor-pointer"
             >
-              <span className="text-gray-600 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+              
+              <span className="text-gray-600 dark:text-gray-300 group-hover:text-purple-600 dark:group-hover:text-orange-400">
                 {item.icon}
               </span>
               <span className="absolute left-12 bg-white dark:bg-navy-800 px-2 py-1 rounded text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -55,7 +62,7 @@ const Sidebar = () => {
               </span>
             </Link>
           )
-        ))}
+        )}
       </div>
     </motion.div>
   );
