@@ -14,17 +14,18 @@ const Team = () => {
       expertise: 'CUSTOMS CLEARANCE OPERATIONS',
     },
     {
+      name: 'ZAYAN RAMZAN',
+      role: 'CEO & Founder',
+      image: image3,
+      expertise: 'OPERATIONS & SALES',
+    },
+    {
       name: 'MUHSIN MOOSA',
       role: 'Regional Manager',
       image: image2,
       expertise: 'LOGISTICS & FREIGHT MANAGER',
     },
-    {
-      name: 'ZAYAN RAMZAN',
-      role: 'CEO',
-      image: image3,
-      expertise: 'OPERATIONS & SALES',
-    },
+
   ];
 
   return (
