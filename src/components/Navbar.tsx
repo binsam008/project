@@ -57,7 +57,7 @@ const Navbar = () => {
                   key={item.name}
                   to={item.to}
                   smooth={true}
-                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-purple-700 dark:hover:text-purple-500 cursor-pointer"
+                  className="px-3 py-2 rounded-md text-sm font-medium text-black dark:text-gray-300 hover:text-yellow-400 dark:hover:text-purple-500 cursor-pointer"
                 >
                   {item.name}
                 </Link>

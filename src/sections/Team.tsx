@@ -71,13 +71,13 @@ const Team = () => {
                   <div className="flex justify-center space-x-4">
                     <motion.button
                       whileHover={{ scale: 1.1 }}
-                      className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                      className="text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-orange-400"
                     >
                       <Linkedin size={20} />
                     </motion.button>
                     <motion.button
                       whileHover={{ scale: 1.1 }}
-                      className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                      className="text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-orange-400"
                     >
                       <Mail size={20} />
                     </motion.button>

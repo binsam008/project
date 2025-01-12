@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Instagram } from 'lucide-react';
 
 const Contact = () => {
   const contactInfo = [
@@ -27,6 +27,12 @@ const Contact = () => {
       content: 'Chat with us',
       link: 'https://wa.me/97338251155',
     },
+    {
+      icon: Instagram,
+      title: 'Instagram',
+      content: 'wellreachbh',
+      link: 'https://www.instagram.com/wellreachbh/',
+    },
   ];
 
   return (
@@ -42,7 +48,7 @@ const Contact = () => {
           <p className="text-gray-400">Get in touch with our team</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
           {contactInfo.map((item, index) => (
             <motion.a
               key={index}
@@ -57,8 +63,12 @@ const Contact = () => {
             >
               <div className="flex flex-col items-center text-center">
                 <item.icon className="w-8 h-8 text-purple-600 mb-4" />
-                <h3 className="text-xl font-semibold text-orange-500 mb-2">{item.title}</h3>
-                <p className="text-gray-400">{item.content}</p>
+                <h3 className="text-xl font-semibold text-orange-500 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-400 break-words text-sm">
+                  {item.content}
+                </p>
               </div>
             </motion.a>
           ))}

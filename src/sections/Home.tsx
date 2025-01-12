@@ -80,7 +80,7 @@ const Home = () => {
       <div className="relative text-center max-w-4xl mx-auto px-4 sm:px-6 md:py-5 lg:px-15 py-10 md:ps-5 lg:py-16">
         <AnimatedSection>
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 bg-gradient-to-r from-gray-300 to-blue-400 text-transparent bg-clip-text leading-tight"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 bg-gradient-to-r from-black to-blue-900 text-transparent bg-clip-text leading-tight dark:text-white"
             style={{ wordBreak: 'break-word', lineHeight: '1.4' }}
             {...fadeInUp}
           >
