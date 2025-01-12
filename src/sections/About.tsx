@@ -80,8 +80,8 @@ const About = () => {
               >
                 <motion.div
                   className="text-purple-500 mb-4 flex justify-center dark:text-orange-600"
-                  whileHover={{ rotate: 360 }}
-                  transition={{ duration: 0.5 }}
+                  whileHover={{ rotate: 25 }}
+                  transition={{ duration: 0.1 }}
                 >
                   {value.icon}
                 </motion.div>
