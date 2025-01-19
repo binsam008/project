@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import ScrollToTop from './components/ScrollToTop';
+import { Analytics } from "@vercel/analytics/react"
 import {
   Home,
   About,
@@ -26,6 +27,7 @@ function App() {
         <Contact />
         <Query />
       </main>
+      <Analytics/>
     </div>
   );
 }
