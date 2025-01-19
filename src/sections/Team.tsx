@@ -29,9 +29,9 @@ const Team = () => {
     },
     {
       name: 'MAHMOOD ALI KHALIL',
-      role: 'Chair of the Board',
+      role: 'Director of Board',
       image: image4,
-      expertise: 'LOGISTICS & FREIGHT MANAGER',
+      expertise: 'Chair of the Board',
     },
 
 
