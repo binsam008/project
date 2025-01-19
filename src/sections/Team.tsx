@@ -4,6 +4,8 @@ import { Linkedin, Mail } from 'lucide-react';
 import image2 from '../assets/team2.png'
 import image3 from '../assets/team3.png'
 import image1 from '../assets/team1.png'
+import image4 from '../assets/team4.png'
+
 
 const Team = () => {
   const team = [
@@ -25,6 +27,13 @@ const Team = () => {
       image: image2,
       expertise: 'LOGISTICS & FREIGHT MANAGER',
     },
+    {
+      name: 'MAHMOOD ALI KHALIL',
+      role: 'Chair of the Board',
+      image: image4,
+      expertise: 'LOGISTICS & FREIGHT MANAGER',
+    },
+
 
   ];
 
