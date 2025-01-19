@@ -10,6 +10,12 @@ import image4 from '../assets/team4.png'
 const Team = () => {
   const team = [
     {
+      name: 'MAHMOOD ALI KHALIL',
+      role: 'Director of Board',
+      image: image4,
+      expertise: 'CHAIR OF THE BOARD',
+    },
+    {
       name: 'Varun Nair',
       role: 'CEO & Founder',
       image:image1,
@@ -27,12 +33,7 @@ const Team = () => {
       image: image2,
       expertise: 'LOGISTICS & FREIGHT MANAGER',
     },
-    {
-      name: 'MAHMOOD ALI KHALIL',
-      role: 'Director of Board',
-      image: image4,
-      expertise: 'Chair of the Board',
-    },
+
 
 
   ];
