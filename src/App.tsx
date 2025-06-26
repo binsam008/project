@@ -8,7 +8,8 @@ import {
   Services,
   Team,
   Contact,
-  Query
+  Query,
+  Location
 } from './sections';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <About />
         <Services />
         <Team />
+        <Location />
         <Contact />
         <Query />
       </main>
