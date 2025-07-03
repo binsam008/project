@@ -9,7 +9,8 @@ import {
   Team,
   Contact,
   Query,
-  Location
+  Location,
+  Tracking,
 } from './sections';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Services />
         <Team />
         <Location />
+        <Tracking />
         <Contact />
         <Query />
       </main>
