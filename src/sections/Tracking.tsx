@@ -3,7 +3,17 @@ import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbxGMQq97qDoc7BNb2UxDPhEf5VcTBGkku2eMozDTvd9bWBAa3P2HCuEyTwiTw8gSy_4/exec"; // Replace with your actual Script URL
+  "https://script.google.com/macros/s/AKfycbxGMQq97qDoc7BNb2UxDPhEf5VcTBGkku2eMozDTvd9bWBAa3P2HCuEyTwiTw8gSy_4/exec";
+
+// Manual date formatter for MM/DD/YYYY → DD/MM/YYYY
+const formatDate = (dateString: string) => {
+  if (!dateString) return "N/A";
+  const parts = dateString.split("/");
+  if (parts.length !== 3) return "N/A";
+
+  const [month, day, year] = parts;
+  return `${day}/${month}/${year}`;
+};
 
 const TrackPackage = () => {
   const [trackingId, setTrackingId] = useState("");
@@ -83,8 +93,7 @@ const TrackPackage = () => {
                     <strong>Status:</strong> {result.status}
                   </p>
                   <p className="text-gray-800 dark:text-gray-200 mb-2">
-                    <strong>Updated At:</strong>{" "}
-                    {new Date(result.updatedAt).toLocaleString()}
+                    <strong>Updated At:</strong> {formatDate(result.updatedAt)}
                   </p>
                   <p className="text-gray-800 dark:text-gray-200">
                     <strong>Detail:</strong> {result.detail || "N/A"}
