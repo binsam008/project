@@ -4,7 +4,7 @@ export { default as About } from './About';
 export { default as WhyChooseUs } from './WhyChooseUs';
 export { default as Services } from './Services';
 export { default as Process } from './OurProcess';
-export { default as Team } from './Team';
+// export { default as Team } from './Team';
 export { default as Location } from './Location';
 export { default as Tracking } from './Tracking';
 export { default as Contact } from './Contact';

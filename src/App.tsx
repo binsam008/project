@@ -6,7 +6,6 @@ import {
   Home,
   About,
   Services,
-  Team,
   Contact,
   Query,
   Location,
@@ -32,7 +31,7 @@ function App() {
         <WhyChooseUs />
         <Services />
         <Process />
-        <Team />
+        {/* <Team /> */}
         <Location />
         <Tracking />
         <Contact />
