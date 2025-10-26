@@ -11,7 +11,11 @@ import {
   Query,
   Location,
   Tracking,
+  Process,
+  
 } from './sections';
+import Chatbot from './components/Chatbot';
+
 
 function App() {
   return (
@@ -19,16 +23,19 @@ function App() {
       <Navbar />
       <Sidebar />
       <ScrollToTop />
+      <Chatbot/>
       
       <main>
         <Home />
         <About />
         <Services />
+        <Process />
         <Team />
         <Location />
         <Tracking />
         <Contact />
         <Query />
+
       </main>
       <Analytics/>
     </div>
