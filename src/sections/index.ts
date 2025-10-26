@@ -1,6 +1,7 @@
 // Core sections
 export { default as Home } from './Home';
 export { default as About } from './About';
+export { default as WhyChooseUs } from './WhyChooseUs';
 export { default as Services } from './Services';
 export { default as Process } from './OurProcess';
 export { default as Team } from './Team';

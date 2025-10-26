@@ -12,6 +12,7 @@ import {
   Location,
   Tracking,
   Process,
+  WhyChooseUs,
   
 } from './sections';
 import Chatbot from './components/Chatbot';
@@ -28,6 +29,7 @@ function App() {
       <main>
         <Home />
         <About />
+        <WhyChooseUs />
         <Services />
         <Process />
         <Team />
